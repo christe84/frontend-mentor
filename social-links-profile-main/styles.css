@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root{
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(0, 0%, 20%);
+    --gray: hsl(0, 0%, 12%);
+    --dark-gray:hsl(0, 0%, 8%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    background-color: var(--dark-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.profile-container{
+    background-color: var(--gray);
+    max-width: 400px;
+    font-family: "Inter", sans-serif;
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    padding: 24px;
+    border-radius: 10px;
+}
+
+.profile-container img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: block;
+    margin-inline: auto;
+    margin-bottom: 1.25rem;
+}
+
+/* .profile-name{
+    font-size: 14px;
+    color: var(--white);
+} */
+
+.profile-container h1{
+    color: var(--white);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.profile-container h1 span{
+    font-size: 1rem;
+    color: var(--green);
+    display: block;
+    margin: 0.5rem 0 1rem;
+}
+
+.profile-container p{
+    color:var(--white);
+    /* gap: 0.5rem */
+}
+
+ul{
+    list-style-type: none;
+}
+
+.profile-container ul{
+    display: grid;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.profile-container ul li button{
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--light-gray);
+    color: var(--white);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.profile-container ul li button:hover{
+    background-color: var(--green);
+    color: var(--dark-gray);
+}
